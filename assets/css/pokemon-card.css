@@ -1,0 +1,69 @@
+/* Estilo do fundo escurecido */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escurecido com 50% de opacidade */
+    z-index: 999; /* Coloca o overlay abaixo do cartão */
+}
+
+/* Estilo do cartão Pokémon */
+.pokemon-card {
+    
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 1000;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    }
+
+.pokemon-card img {
+    
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.pokemon-card h2 {
+    text-transform: capitalize;
+}
+
+.types-detail {
+    padding: 4px;
+    text-transform: capitalize;
+    color: #FFF;
+}
+
+.types-detail .type {
+    padding: 4px;
+    border-radius: 5px;
+    margin-bottom: .625rem;
+
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #222;
+    transition: .5s;
+}
+
+.close-btn:hover {
+    color: #333;
+}
